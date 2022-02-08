@@ -152,7 +152,7 @@ For each coverage criterion (Task2, Task3, and Bonus Task), your program needs t
 
 ## Assignment 1 Submission
 
-- You are required to submit your assignment to CANVAS (link TBA). 
+- You are required to submit your assignment to [CANVAS](https://canvas.ust.hk/courses/42403/assignments). 
 - Please put all your code, screenshot, readme and etc. into a single folder and compress it to `comp5111asg01.zip`
 
 The recommended folder structure is:
