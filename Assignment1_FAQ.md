@@ -53,9 +53,9 @@ public static void main(java.lang.String[])
 Therefore, please skip the instrumentation of these statements. 
 We give a hint here, these statements are the objects of the class "soot.jimple.internal.JIdentityStmt".
 
-## 4. Do we need to consider the classes other than `comp5111.assignment.cut.ToolBox` when measuring code coverage?
+## 4. Do we need to consider the classes other than `comp5111.assignment.cut.Subject` when measuring code coverage?
 
-In our assignment, we only expect you to measure the code coverage of `comp5111.assignment.cut.ToolBox`, including the inner classes. 
+In our assignment, we only expect you to measure the code coverage of `comp5111.assignment.cut.Subject`, including the inner classes. 
 Others classes, like `java.lang.String`, should not be instrumented.
 
 ## 5. Do we need to consider try and catch in branch coverage (task 2)?
@@ -86,8 +86,8 @@ You can skip such test cases in your assignment.
 
 ## 8. Why we got ClassNotFound Exception when executing the test cases with the instrumented subject?
 
-There are two inner classes used in ToolBox.java. 
-If you use Soot to instrument only `comp5111.assignment.cut.ToolBox` class, inner classes will not be instrumented. 
+There are ten inner classes used in Subject.java. 
+If you use Soot to instrument only `comp5111.assignment.cut.Subject` class, inner classes will not be instrumented. 
 ClassNotFound exception may occur when executing the test cases that invoking inner classes.
 
 You may change the "-process-dir" argument passed to Soot to let Soot instrument all the class files in a folder.
