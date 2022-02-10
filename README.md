@@ -2,6 +2,8 @@
 
 ## Deadline: 14 March 2022
 
+## Update
+- (2022 Feb 10): The soot example has been released in our [course website](https://course.cse.ust.hk/comp5111/assignments_2022S/soot-example.zip), this example will be explained in our incomming workshop in Feb 15. You may refer to this example to implement your own program.
 ## Assignment Objective
 
 In assignment 1, you are expected to: 
