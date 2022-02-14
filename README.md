@@ -67,7 +67,7 @@ Randoop is a tool to generate JUnit test suites. A short tutorial about Randoop 
 
 #### Requirements: 
 1. You need to use Randoop to generate **5 different test suites** for the given program.
-2. Each test suite must achieve at least 50% statement coverage.
+2. Each test suite must achieve at least 60% statement coverage.
 3. The 5 test suites should be different from each other. Randoop parameter `--randomseed` may be helpful.
 4. Package name of generated test suites should be `comp5111.assignment.cut`. Randoop parameter `--junit-package-name` may be helpful.
 5. The 5 test suites should be put in `src/test/randoop<i>` for the `<i>`th test suite, where `0<=i<=4`. Randoop parameter `--junit-output-dir` may be helpful.
