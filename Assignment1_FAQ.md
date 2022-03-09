@@ -108,3 +108,7 @@ This is related to the implementation of EclEmma.
 Please read [here](https://github.com/jacoco/eclemma/issues/61). 
 EclEmma is based on JaCoCo. 
 
+## 11. For statement/line coverage of class Check and HeapSort, the difference between Soot and EclEmma can be huge.
+If you encounter a large statement/line coverage difference (over 10%) between Soot and EclEmma on the class Check and HeapSort, don't worry because it can be caused by the implementation difference between EclEmma and Soot's instrumentation scheme. For other classes, the coverage result between Soot and EclEmma should be similar.
+
+
