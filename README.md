@@ -2,6 +2,9 @@
 
 ## Deadline: 21 April (23:59) 2022
 
+## Update
+- (2022 Apr 12): Refine the score calculation formula in task 3.
+
 ### Have Questions?
 1. If you have questions, please first check our [FAQ](Assignment2_FAQ.md).
 2. If your problem is not solved, you are recommended to create `Issues` in this repository.
@@ -127,9 +130,9 @@ You may find that the top-ranked suspicious statements reported by your program 
 3. A short report explaining your strategy to design test cases and compare the results before and after refinement.
 
 #### Grading Scheme:
-*Effectiveness of test cases* (25%). Your grade in this task is related to both your average ranking (as mentioned in Task 2) of each injected fault (the higher, the better), and the average number of manually-written tests you add in each test suite (the fewer, the better).
+*Effectiveness of test cases* (25%). Your grade in this task is related to both your average ranking amont all test suites (as mentioned in Task 2) of each injected fault (the higher, the better), and the average number of manually-written tests you add in each test suite (the fewer, the better).
 
-Your score of each faulty statement `s` is: Score<sub>s</sub> = (25% / 6N) * (`your ranking` - `default ranking`) / (`default ranking` - `highest ranking among classmates`), where N is the total number of injected faulty statements, and `default ranking` is the ranking based on the provided test suite.
+Your score of each faulty statement `s` is: Score<sub>s</sub> = (25% / N) * (`your average ranking` - `default average ranking`) / (`best average ranking among classmates` - `default average ranking`), where N is the total number of injected faulty statements, and `default average ranking` is the average ranking among all provided test suite of a specific faulty statement.
 
 Suppose `NT` represents the average number of manually-written tests that you have added to each of the given six test suite. The total grade is given by ΣScore<sub>s</sub> *  (`largest NT among classmates` - `your NT` + 1) / (`largest NT among classmates` - `smallest NT among classmates`)
 
