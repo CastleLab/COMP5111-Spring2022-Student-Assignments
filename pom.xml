@@ -30,7 +30,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                            	<source>src/test/example_test</source>
+                            	<!-- <source>src/test/example_test</source> -->
                                 <source>src/test/randoop0</source>
                                 <source>src/test/randoop1</source>
                                 <source>src/test/randoop2</source>
