@@ -3,6 +3,7 @@
 ## Deadline: 21 April (23:59) 2022
 
 ## Update
+- (2022 Apr 20): Update two frequentely asked questions [FAQ Q4](Assignment2_FAQ.md#q4-am-i-allowed-to-include-many-faulty-functions-in-the-same-test-case-to-increase-the-suspicious-score-of-faulty-statement) and [FAQ Q5](Assignment2_FAQ.md#q5-should-i-include-the-target-statement-when-ranking-should-i-ground-or-floor-the-result) regarding task 2 and task 3 in assignment 2.
 - (2022 Apr 14): Change the file format of Spectrum Reports from [csv|tsv] to only tsv.
 - (2022 Apr 12): Refine the score calculation formula in task 3.
 
