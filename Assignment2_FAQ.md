@@ -72,3 +72,28 @@ In Task 2 and 3, we require you to use `Ochiai` ranking function as mentioned in
 `Ochiai` computes suspicious score for each statement. It is possible that multiple statements receive the same score. 
 To break this tie, we require you to compute the ranking for each statement based on the suspicious score, [as mentioned in Task 2](./README.md#ranking-of-suspicious-statements). 
 
+## Q4. Am I allowed to include many faulty functions in the same test case to increase the suspicious score of faulty statement?
+In Task 3, you are asked to extend the existing test suite to achieve the higher ranking of suspicious statements. Some students may write some test cases that include multiple faulty functions as follows:
+```
+String string0 = foo();    # Execute faulty statement 1
+String string1 = foo2();    # Execute faulty statement 2
+String string2 = foo3();    # Execute faulty statement 3
+assertEquals(“some_text”, string2)    # Fail
+```
+However, such test case is not allowed. Each statement in the test sequences should be written so that it contributes to an assertion. In other words, the assertion will no longer work if any of statement in the test sequence is removed. Under this criterion, the first two statements in this example is redundant and should be removed.
+In contrast below test case is allowed:
+```
+String string0 = foo();          # Execute faulty statement 1
+String string1 = foo2(string0);    # Execute faulty statement 2
+String string2 = foo3(string1);    # Execute faulty statement 3
+assertEquals(“some_text”, string2)    # Fail
+```
+All statements in this example are relevant, removal of any will cause the assertion no longer to work.
+
+## Q5. Should I include the target statement when ranking? Should I ground or floor the result?
+In Task 2, you are asked to rank the statement following: $\frac{N+M+1}{2}$. When ranking the statement $a$, you should also consider $a$ when measuring the ranking. The ranking result will be further floored to integer. For example, if a sequence of suspicious scores is (0.9, 0.8, 0.8, 0.8, 0.8, 0.7), the ranking of each statement is calculated as follows:
+```
+rank(stmt 1): floor((0+1+1)/2)=floor(1)=1
+rank(stmt 2/3/4/5): floor((1+5+1)/2)=floor(3.5)=3
+rank(stmt 6): floor((5+6+1)/2)=floor(6)=6
+```
