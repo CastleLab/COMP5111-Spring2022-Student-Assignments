@@ -30,7 +30,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/test/asg1-grade</source>
+                                <!-- <source>src/test/asg1-grade</source> -->
                                 <source>src/test/asg2-grade</source>
                                 <source>src/test/fault-revealing0</source>
                                 <source>src/test/fault-revealing1</source>

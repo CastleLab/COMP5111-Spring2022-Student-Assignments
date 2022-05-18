@@ -18,7 +18,7 @@ import org.evosuite.runtime.ViolatedAssumptionAnswer;
 import org.junit.runner.RunWith;
 
 //@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true) 
-public class Subject_ESTest extends Subject_ESTest_scaffolding {
+public class Subject_FaultRevealing3_ESTest extends Subject_FaultRevealing3_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test000()  throws Throwable  {
