@@ -79,7 +79,7 @@ public class Subject_FaultRevealing3_ESTest_scaffolding {
   }
 
   private static void initializeClasses() {
-    org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Subject_ESTest_scaffolding.class.getClassLoader() ,
+    org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Subject_FaultRevealing3_ESTest_scaffolding.class.getClassLoader() ,
       "comp5111.assignment.cut.Subject$Progressable",
       "comp5111.assignment.cut.Subject$PrimUtils",
       "comp5111.assignment.cut.Subject$HeapSort",
@@ -95,13 +95,13 @@ public class Subject_FaultRevealing3_ESTest_scaffolding {
     );
   } 
   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
-    mock(Class.forName("comp5111.assignment.cut.Subject$IndexedSortable", false, Subject_ESTest_scaffolding.class.getClassLoader()));
-    mock(Class.forName("comp5111.assignment.cut.Subject$PrimUtils$IntComparator", false, Subject_ESTest_scaffolding.class.getClassLoader()));
-    mock(Class.forName("comp5111.assignment.cut.Subject$Progressable", false, Subject_ESTest_scaffolding.class.getClassLoader()));
+    mock(Class.forName("comp5111.assignment.cut.Subject$IndexedSortable", false, Subject_FaultRevealing3_ESTest_scaffolding.class.getClassLoader()));
+    mock(Class.forName("comp5111.assignment.cut.Subject$PrimUtils$IntComparator", false, Subject_FaultRevealing3_ESTest_scaffolding.class.getClassLoader()));
+    mock(Class.forName("comp5111.assignment.cut.Subject$Progressable", false, Subject_FaultRevealing3_ESTest_scaffolding.class.getClassLoader()));
   }
 
   private static void resetClasses() {
-    org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Subject_ESTest_scaffolding.class.getClassLoader()); 
+    org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Subject_FaultRevealing3_ESTest_scaffolding.class.getClassLoader()); 
 
     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
       "comp5111.assignment.cut.Subject",
