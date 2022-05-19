@@ -32,11 +32,13 @@
                             <sources>
                                 <!-- <source>src/test/asg1-grade</source> -->
                                 <source>src/test/asg2-grade</source>
-                                <source>src/test/fault-revealing0</source>
-                                <source>src/test/fault-revealing1</source>
-                                <source>src/test/fault-revealing2</source>
-                                <source>src/test/fault-revealing3</source>
-                                <source>src/test/randoop0</source>
+                                <source>src/test/fault-revealing-evosuite0</source>
+                                <source>src/test/fault-revealing-evosuite1</source>
+                                <source>src/test/fault-revealing-evosuite2</source>
+                                <source>src/test/fault-revealing-randoop0</source>
+                                <source>src/test/fault-revealing-randoop1</source>
+                                <source>src/test/fault-revealing-randoop2</source>
+                                <!-- <source>src/test/randoop0</source>
                                 <source>src/test/randoop1</source>
                                 <source>src/test/randoop2</source>
                                 <source>src/test/randoop3</source>
@@ -45,7 +47,7 @@
                                 <source>src/test/evosuite1</source>
                                 <source>src/test/evosuite2</source>
                                 <source>src/test/evosuite3</source>
-                                <source>src/test/evosuite4</source>
+                                <source>src/test/evosuite4</source> -->
                             </sources>
                         </configuration>
                     </execution>
