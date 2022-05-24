@@ -42,12 +42,12 @@
                                 <source>src/test/randoop1</source>
                                 <source>src/test/randoop2</source>
                                 <source>src/test/randoop3</source>
-                                <source>src/test/randoop4</source>
+                                <source>src/test/randoop4</source> -->
                                 <source>src/test/evosuite0</source>
                                 <source>src/test/evosuite1</source>
                                 <source>src/test/evosuite2</source>
                                 <source>src/test/evosuite3</source>
-                                <source>src/test/evosuite4</source> -->
+                                <source>src/test/evosuite4</source>
                             </sources>
                         </configuration>
                     </execution>
