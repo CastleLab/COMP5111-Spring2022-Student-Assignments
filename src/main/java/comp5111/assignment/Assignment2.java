@@ -26,10 +26,10 @@ public class Assignment2 {
             System.exit(0);
         }
 
-        String testSuite = args[1];
+        String testSuite = args[2];
 
         // these args will be passed into soot.
-        String[] sootArgs = Arrays.copyOfRange(args, 2, args.length);
+        String[] sootArgs = Arrays.copyOfRange(args, 3, args.length);
 
         ScoreAlgorithm flAlgorithm;
         if (args[0].toLowerCase(Locale.ROOT).compareTo("ochiai") == 0) {
@@ -55,7 +55,7 @@ public class Assignment2 {
 
         System.out.println("Locating faults...");
         SuspiciousRanking ranking = tracer.rank(flAlgorithm);
-        Path file = Paths.get("src/test/report/spectrum_fl_" + args[0].toLowerCase(Locale.ROOT) + "_" + testSuite + ".tsv");
+        Path file = Paths.get(args[1]+"/spectrum_fl_" + args[0].toLowerCase(Locale.ROOT) + "_" + testSuite + ".tsv");
         ranking.genReport(file.toString());
         System.out.println("Fault localization report generated at " + file);
     }
